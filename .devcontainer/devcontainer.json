@@ -3,5 +3,6 @@
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y xfce4 xfce4-goodies && echo 'startxfce4 &' | sudo tee -a /usr/local/share/desktop-init/launch-desktop.sh",
   "forwardPorts": [6080]
 }
